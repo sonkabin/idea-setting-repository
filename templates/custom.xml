@@ -1,0 +1,27 @@
+<templateSet group="custom">
+  <template name="test" value="public void test$VAR1$(){&#10;    $VAR2$&#10;}" description="生成测试方法" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prs" value="private String $VAR1$;$END$" description="private String" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prii" value="private int $VAR1$;&#10;$END$" description="private int" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="bes4j" value="@Id&#10;@GeneratedValue(strategy = GenerationType.IDENTITY)&#10;private Integer id;&#10;@Column$END$&#10;private String $VAR1$;&#10;@Column(name = &quot;gmt_create&quot;)&#10;private LocalDateTime create;&#10;@Column(name = &quot;gmt_modified&quot;)&#10;private LocalDateTime update;" description="based entity structure for jpa" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
